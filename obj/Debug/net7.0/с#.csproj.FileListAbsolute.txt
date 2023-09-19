@@ -1,0 +1,14 @@
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\с#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\с#.AssemblyInfoInputs.cache
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\с#.AssemblyInfo.cs
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\с#.csproj.CoreCompileInputs.cache
+C:\Users\Кирилл\Desktop\с#\bin\Debug\net7.0\с#.exe
+C:\Users\Кирилл\Desktop\с#\bin\Debug\net7.0\с#.deps.json
+C:\Users\Кирилл\Desktop\с#\bin\Debug\net7.0\с#.runtimeconfig.json
+C:\Users\Кирилл\Desktop\с#\bin\Debug\net7.0\с#.dll
+C:\Users\Кирилл\Desktop\с#\bin\Debug\net7.0\с#.pdb
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\с#.dll
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\refint\с#.dll
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\с#.pdb
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\с#.genruntimeconfig.cache
+C:\Users\Кирилл\Desktop\с#\obj\Debug\net7.0\ref\с#.dll
