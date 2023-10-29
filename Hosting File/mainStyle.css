@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: flex-end;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #9C9A9A;
+
+}
+
+.text-block {
+    padding: 40px;
+
+
+}
+
+.img-main-page {
+    width: 170px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    
+}
+
+.text-cat {
+    padding-left: 20px;
+}
+
+.line-cat {
+    width: 230px
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-block {
+    height: 210px;
+    width: 1045px;
+    background: url('./img/loading.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-block-text {
+    color: #CBCBCB;
+    font-size: 40px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+
+.regtable {
+    
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #9C9A9A;
+    
+}
+
+.main-block{
+    position: absolute;
+}
+
+form{
+   
+    flex-direction: column;
+    display: flex;
+}
+
+.reg-text {
+    font-size: 40px;
+    padding: 20px 0 10px 0;
+    pointer-events: none;
+    color: #9C9A9A;
+}
+
+.button-box {
+    padding-top: 20px;
+  
+}
+
+.reg-button {
+    color: #000000;
+    
+    border: ridge 2px #918e94;
+    border-radius: 5px;
+    font-family: "MADELikesSlab";
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+
