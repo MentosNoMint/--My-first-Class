@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #CEE0F0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    pointer-events: none;
+    width: 285px;
+    height: 109px;
+    margin-top: 50px;
+    padding-left: 80px;
+}
+
+.valueMenu {
+    display: flex;
+    justify-content: flex-end;
+  
+}
+
+.load {
+    margin-right: 47px;
+    margin-top: 13px;
+}
+
+.Profile-Setting {
+    display: flex;
+    width: 205px;
+    height: 55.43px;
+    margin-right: 81px;
+}
+
+.setting {
+    margin-right: 35px;
+    margin-top: 13px;
+}
+
+.tg-div {
+    margin-top: 8px;
+    display: flex;
+    width: 158px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 66px;
+}
+
+.Telegram {
+    margin-right: 9px;
+}
+
+.tg {
+    color: #CBCBCB;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+a {
+    text-decoration: none;
+  }
