@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #C5DCF2;
+    font-family: 'Inter', sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    pointer-events: none;
+    width: 285px;
+    height: 109px;
+    margin-top: 31px;
+    margin-left: 80px;
+}
+
+
+
+.btn-load {
+    margin-top: 60px;
+    width: 331px;
+    height: 57px;
+    border-radius: 14px;
+    border: 5px solid #FFD600;
+    background: #CEE0F0;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-search {
+    margin-top: 60px;
+    width: 331px;
+    height: 57px;
+    border-radius: 14px;
+    border: 5px solid #FFD600;
+    background: #CEE0F0;
+    margin-right: 43px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-header {
+    display: flex;
+
+
+}
+
+.user-tab {
+    width: 98.944px;
+    height: 131.53px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.user-logo {
+    margin-top: 68px;
+    z-index: 2;
+    position: absolute;
+}
+
+.hand {
+    margin-top: 43px;
+    padding-right: 60px;
+}
+
+.setting {
+    margin-top: 82px;
+    width: 33px;
+    height: 33px;
+    margin-right: 30px;
+}
+
+.setting-img {
+    padding-right: 60px;
+}
+
+.logo-girl {
+    margin-right: 70px;
+    margin-top: 18px;
+    z-index: 999;
+}
+
+.btn-load-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-search-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 22px;
+}
+
+.tyan-img {
+    margin-top: 20px;
+    position: absolute;
+    width: 170px;
+    height: 40.95px;
+}
+
+.lupa {
+    margin-left: 33px;
+}
+
+.btn-loading {
+    width: 331px;
+    height: 57px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.a-setting {
+    width: 33px;
+    height: 33px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 1850px;
+}
+
+.wrapper {
+    background: url('/img/FOON.SVG');
+    border-radius: 181px;
+    width: 1850px;
+    height: 902px;
+    display: flex;
+    justify-content: center;
+}
+
+.tg-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    width: 1653px;
+}
+
+.tg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 223px;
+
+}
+
+.tg-img {
+    width: 24px;
+    height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.text-main-footer {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.info-footer-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.support-footer-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.support-footer {
+    margin-right: 73px;
+}
+
+
+.setting-files {
+    width: 367px;
+    height: 902px;
+    display: flex;
+    flex-direction: column;
+}
+
+.files-main {
+    width: 1483px;
+    height: 898px;
+    display: flex;
+    margin-left: 100px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.setting-variant {
+    width: 367px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.delete-obj {
+    width: 367px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-photo {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    color: #FFF;
+}
+
+.photo-variant {
+    margin-right: 100px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Photo-setting-img {
+    margin-left: 15px;
+    width: 29px;
+    height: 26.583px;
+}
+
+.files-variant {
+    margin-right: 90px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.files-variant-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    color: #FFF;
+}
+
+.files-setting-img {
+    width: 47px;
+    height: 43.67px;
+}
+
+.text-photo {
+    font-family: Inter;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.btn-photo {
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.delete-variant {
+    margin-right: 97px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-delete-variant {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.delete-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.delete-text-img {
+    width: 28px;
+    height: 33.131px;
+    margin-left: 5px;
+}
+
+.delete-text-block {
+    color: rgba(183, 158, 158, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.delete-block-img {
+    margin-top: 12px;
+    width: 129px;
+    height: 129px;
+}
+
+.allDelete-text-IMG {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blockfile {
+    width: 150px;
+    height: 150px;
+    border-radius: 57px;
+    border: 5px solid #FFF;
+    background: #D9E9F9;
+    margin-right: 80px;
+    margin-top: 50px;
+}
+
