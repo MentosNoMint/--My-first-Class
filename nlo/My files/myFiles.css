@@ -8,8 +8,20 @@
 body {
     background: #C5DCF2;
     font-family: 'Inter', sans-serif;
+    animation: ani 3s forwards;
 
 }
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 header {
     display: flex;
@@ -94,7 +106,7 @@ header {
 .logo-girl {
     margin-right: 70px;
     margin-top: 18px;
-    z-index: 999;
+    z-index: 500;
 }
 
 .btn-load-text {
@@ -387,7 +399,372 @@ a {
     border-radius: 57px;
     border: 5px solid #FFF;
     background: #D9E9F9;
-    margin-right: 80px;
-    margin-top: 50px;
+
 }
 
+.randomTyan-file {
+
+    width: 150px;
+    height: 200px;
+    margin-right: 80px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.all-files-tyan {
+    height: 50px;
+}
+
+.all-files-tyan2 {
+    padding-left: 40px;
+    height: 20px;
+    margin-top: 30px;
+    width: 101;
+}
+
+.all-files-tyan4 {
+    height: 50px;
+    padding-left: 40px;
+}
+
+.menu {
+    background: url('/img/menu.svg');
+    width: 389px;
+    height: 300px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn-menu-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: Light;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 30px;
+}
+
+.btn-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+
+}
+
+.btn-span-menu {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    padding-top: 30px;
+    margin-right: 210px;
+    transition: transform 0.3s;
+}
+
+.btn-span-menu:hover {
+    transform: scale(1.1);
+}
+
+.Profile-box {
+    width: 733px;
+    height: 939px;
+    background: url('/img/profile-box.svg');
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    position: fixed;
+    align-items: flex-start;
+    z-index: 999;
+    margin: 18px;
+    left: 550px;
+    border-radius: 70px;
+}
+
+.avatar-profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 37px;
+}
+
+
+.btn-change-avatar {
+    width: 153px;
+    height: 26px;
+    border-radius: 14px;
+    border: 3px solid #FFD600;
+    background: #CEE0F0;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.nick {
+    color: #FFF;
+}
+
+.login-text-profile {
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.login-email-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.email-profile {
+    border-radius: 19px;
+    border: 1px solid #000;
+    background: #CEE0F0;
+    width: 475px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 81px;
+}
+
+.text-change-profile {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.btn-email-profile {
+    border-radius: 14px;
+    border: 3px solid #FFD600;
+    background: #CEE0F0;
+    width: 153px;
+    height: 26px;
+    cursor: pointer;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.login-profile {
+    border-radius: 19px;
+    border: 1px solid #000;
+    background: #CEE0F0;
+    width: 475px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.admins-tools {
+    border-radius: 35px;
+    border: 1px solid #000;
+    background: #A6CBEB;
+    width: 465px;
+    height: 451px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 61px;
+}
+
+.admins-tools-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 36px;
+}
+
+.input-profile-box {
+    border-radius: 19px;
+    border: 1px solid #FFD600;
+    background: #CEE0F0;
+    width: 418px;
+    height: 39px;
+    color: #090909;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+}
+
+.span-prelog-profile {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: Light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.adm-email-login-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    margin-left: 40px;
+}
+
+.check-profile {
+    margin-left: 24px;
+
+}
+
+.delete-profile {
+    margin-left: 24px;
+    margin-top: 26px;
+}
+
+.adm-profile {
+    margin-left: 24px;
+    margin-top: 26px;
+}
+
+.btn-user-profile-header {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.modal-wrapper {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    z-index: 888;
+}
+
+.visible {
+
+    animation: ani 3s forwards;
+}
+
+.leave-accont {
+    width: 153px;
+    height: 26px;
+    border-radius: 14px;
+    border: 3px solid #ff0000;
+    background: #CEE0F0;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.put-login-email-box {
+    border-radius: 41px;
+    background: #CEE0F0;
+    width: 586px;
+    height: 158px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    position: fixed;
+    align-items: center;
+    z-index: 999;
+    margin: 300px;
+    left: 350px;
+    justify-content: center;
+ 
+}
+
+input{
+    text-indent: 10px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    border-radius: 14px;
+    border: 5px solid #FFD600;
+    background: #CEE0F0;
+    text-decoration: none;
+    margin-top: 9px;
+    width: 331px;
+    height: 52px;
+}
+.button-box{
+    border-radius: 16px;
+    border: 1px solid #FFD600;
+    background: #99B7D2;
+    width: 166px;
+    height: 42px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 76px;
+}
+
+.reg-button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.put-login-password-box{
+    border-radius: 41px;
+    background: #CEE0F0;
+    width: 586px;
+    height: 158px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    position: fixed;
+    align-items: center;
+    z-index: 999;
+    margin: 300px;
+    left: 350px;
+    justify-content: center;
+}

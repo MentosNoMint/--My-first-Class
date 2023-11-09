@@ -12,7 +12,97 @@
     <title>My files</title>
 </head>
 
-<body>
+<body class="check-zone">
+    <div class="modal-wrapper" id="modal-wrapper"></div>
+
+    <div class="put-login-email-box" id="put-login-email-box">
+        <form class="my-form-change">
+            <div class="wrapperchange">
+                <div class="putEmail">
+                    <label>
+                        <input id="email-change" name="email-change" placeholder="Введите новую почту">
+                    </label>
+                </div>
+                <div class="countChange">
+                    <div id="button-box" class="button-box">
+                        <button class="reg-button" type="submit" id="submit">Сменить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="put-login-password-box" id="put-login-password-box">
+        <form class="my-form-change-password">
+            <div class="wrapperchange">
+                <div class="putEmail">
+                    <label>
+                        <input id="login-change" name="login-change" placeholder="Введите новый логин">
+                    </label>
+                </div>
+                <div class="countChange">
+                    <div id="button-box" class="button-box">
+                        <button class="reg-button" type="submit" id="submit">Сменить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="Profile-box" id="Profile-box">
+        <div class="avatar-profile">
+            <img src="/img/img-profile-box.svg" alt="Avatar">
+            <button class="btn-change-avatar">
+                Добавить аватар
+            </button>
+            <form class="My-form">
+                <button class="leave-accont" id="Leave-btn">Выйти</button>
+            </form>
+        </div>
+        <div class="adm-email-login-box">
+            <div class="login-email-change">
+                <div class="nick">
+
+                </div>
+                <div class="email-profile">
+                    <div class="email-profile-view">
+
+                    </div>
+                    <button class="btn-email-profile" id="btn-email-profile">
+                        Изменить почту
+                    </button>
+                </div>
+
+                <div class="login-profile">
+                    <div class="login-profile-view">
+                        
+                    </div>
+                    
+                    <button class="btn-email-profile" id="btn-password-profile">
+                        Изменить логин
+                    </button>
+                </div>
+            </div>
+            <div class="admins-tools">
+                <span class="admins-tools-text">
+                    Admins tools
+                </span>
+
+                <div class="check-profile">
+                    <span class="span-prelog-profile">Просмотр Профиля:</span>
+                    <input class="input-profile-box" type="text" placeholder="Введите логин юзера">
+                </div>
+
+                <div class="delete-profile">
+                    <span class="span-prelog-profile">Удалить профиль:</span>
+                    <input class="input-profile-box" type="text" placeholder="Введите логин юзера">
+                </div>
+
+                <div class="adm-profile">
+                    <span class="span-prelog-profile">Выдача админ привилегий:</span>
+                    <input class="input-profile-box" type="text" placeholder="Введите логин юзера">
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <a href="#"><img src="/img/logo-FilesPage.svg" alt="Logo" class="logo"></a>
         <div class="logo-girl">
@@ -40,8 +130,11 @@
             </a>
         </div>
 
-        <a href="">
+
+
+        <button class="btn-user-profile-header" id="load-btn">
             <div class="user-tab">
+
                 <img src="/img/user-girls.svg" alt="Girl" style="position: absolute; z-index: 3;">
 
                 <div class="user-logo">
@@ -50,68 +143,74 @@
 
                 <img src="/img/hand.svg" alt="hand" class="hand">
             </div>
-        </a>
+        </button>
     </header>
 
     <main>
+
+
         <div class="wrapper" id="wrapper">
-            
+
             <div class="files-main">
-               
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
-                <div class="blockfile"></div>
 
-                  
-            </div>
-       
-
-        <div class="setting-files">
-
-            <div class="setting-variant">
-                <div class="photo-variant">
-                    <button class="btn-photo">
-                        <span class="text-photo">Фото</span>
-
-                    </button>
-                    <img src="/img/photo-setting.svg" alt="PHOTO" class="Photo-setting-img">
+                <div class="randomTyan-file">
+                    <img src="/img/Tyan-element-file1.svg" alt="Tyan" class="all-files-tyan">
+                    <div class="blockfile" draggable="true"></div>
                 </div>
-                <div class="files-variant">
-                    <button class="files-variant-btn">
-                        <span class="btn-photo">Файлы</span>
 
-                    </button>
-                    <img src="/img/file-btn.svg" alt="files" class="files-setting-img">
+                <div class="randomTyan-file">
+                    <img src="/img/tyan-element-2.svg" alt="Tyan" class="all-files-tyan2">
+                    <div class="blockfile" draggable="true"></div>
                 </div>
-                <div class="delete-variant">
-                    <button class="btn-delete-variant">
-                        <span class="delete-text" >
-                            Корзина
-                        </span>
-                    </button>
-                    <img src="/img/delete-btn.svg" alt="Delete-btn" class="delete-text-img">
+
+                <div class="randomTyan-file">
+                    <img src="/img/tyan-element-3.svg" alt="Tyan" class="all-files-tyan">
+                    <div class="blockfile" draggable="true"></div>
                 </div>
+                <div class="randomTyan-file">
+                    <img src="/img/tyan-element-4.svg" alt="Tyan" class="all-files-tyan4">
+                    <div class="blockfile" draggable="true"></div>
+                </div>
+
             </div>
 
-            <div class="delete-obj">
-                <div class="allDelete-text-IMG">
-                    <p class="delete-text-block">
-                        Переносите ненужные файлы
-                    </p>
-                    <img src="/img/musorka.svg" alt="Delete" class="delete-block-img">
+
+            <div class="setting-files">
+
+                <div class="setting-variant">
+                    <div class="photo-variant">
+                        <button class="btn-photo">
+                            <span class="text-photo">Фото</span>
+
+                        </button>
+                        <img src="/img/photo-setting.svg" alt="PHOTO" class="Photo-setting-img">
+                    </div>
+                    <div class="files-variant">
+                        <button class="files-variant-btn">
+                            <span class="btn-photo">Файлы</span>
+
+                        </button>
+                        <img src="/img/file-btn.svg" alt="files" class="files-setting-img">
+                    </div>
+                    <div class="delete-variant">
+                        <button class="btn-delete-variant">
+                            <span class="delete-text">
+                                Корзина
+                            </span>
+                        </button>
+                        <img src="/img/delete-btn.svg" alt="Delete-btn" class="delete-text-img">
+                    </div>
+                </div>
+
+                <div class="delete-obj">
+                    <div class="allDelete-text-IMG">
+                        <p class="delete-text-block">
+                            Переносите ненужные файлы
+                        </p>
+                        <img src="/img/musorka.svg" alt="Delete" class="delete-block-img" id="musorka">
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
 
     </main>
@@ -139,7 +238,27 @@
             </p>
         </div>
     </footer>
+    <div id="Menu" class="menu" style="display:none">
+        <div class="btn-menu">
+            <button class="btn-span-menu">
+                <span class="btn-menu-text">Скачать</span>
+            </button>
+            <button class="btn-span-menu">
+                <span class="btn-menu-text">Удалить</span>
+            </button>
+            <button class="btn-span-menu">
+                <span class="btn-menu-text">Поделиться</span>
+            </button>
+            <button class="btn-span-menu">
+                <span class="btn-menu-text">Переименовать</span>
+            </button>
+
+        </div>
+    </div>
 </body>
 <script src="./move.js"></script>
-
+<script src="./Profile-box.js"></script>
+<script src="MyFiles.js"></script>
+<script src="./ChangeEmail.js"></script>
+<script src="./ChangeLogin.js"></script>
 </html>

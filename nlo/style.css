@@ -277,6 +277,7 @@ footer {
 
 }
 
+
 .reg-text {
     color: #FFF;
     font-family: Inter;
@@ -376,7 +377,8 @@ input {
 
 .error-register {
     margin-top: 10px;
-    padding-left: 130px;
+    padding-left: 220px;
+    position: absolute;
 }
 
 .tg-footer-text {
@@ -400,7 +402,7 @@ input {
     align-items: center;
     margin-left: 122px;
     margin-top: 100px;
-   
+
 }
 
 .text-main-footer {
@@ -460,3 +462,44 @@ input {
     margin-right: 40px;
 }
 
+.btn-login {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+
+}
+
+.login-box {
+    display: none;
+    position: fixed;
+    width: 625px;
+    height: 660px;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: url('./img/tyan-reg.svg');
+    margin: 80px;
+    left: 600px;
+    z-index: 999;
+}
+
+.login-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.log-text-box {
+    margin-bottom: 20px;
+    margin-left: 130px;
+}
