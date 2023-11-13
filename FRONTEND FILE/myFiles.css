@@ -1,0 +1,851 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #C5DCF2;
+    font-family: 'Inter', sans-serif;
+    animation: ani 3s forwards;
+
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    pointer-events: none;
+    width: 285px;
+    height: 109px;
+    margin-top: 31px;
+    margin-left: 80px;
+}
+
+
+
+.btn-load {
+    margin-top: 60px;
+    width: 331px;
+    height: 57px;
+    border-radius: 14px;
+    border: 5px solid #FFD600;
+    background: #CEE0F0;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-search {
+    margin-top: 60px;
+    width: 331px;
+    height: 57px;
+    border-radius: 14px;
+    border: 5px solid #FFD600;
+    background: #CEE0F0;
+    margin-right: 43px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-header {
+    display: flex;
+
+
+}
+
+.user-tab {
+    width: 98.944px;
+    height: 131.53px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.user-logo {
+    margin-top: 68px;
+    z-index: 2;
+    position: absolute;
+}
+
+.hand {
+    margin-top: 43px;
+    padding-right: 60px;
+}
+
+.setting {
+    margin-top: 82px;
+    width: 33px;
+    height: 33px;
+    margin-right: 30px;
+}
+
+.setting-img {
+    padding-right: 60px;
+}
+
+.logo-girl {
+    margin-right: 70px;
+    margin-top: 18px;
+    z-index: 500;
+}
+
+.btn-load-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn-search-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 22px;
+}
+
+.tyan-img {
+    margin-top: 20px;
+    position: absolute;
+    width: 170px;
+    height: 40.95px;
+}
+
+.lupa {
+    margin-left: 33px;
+}
+
+.btn-loading {
+    width: 331px;
+    height: 57px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.a-setting {
+    width: 33px;
+    height: 33px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 1850px;
+}
+
+.wrapper {
+    background: url('/img/FOON.SVG');
+    border-radius: 181px;
+    width: 1850px;
+    height: 902px;
+    display: flex;
+    justify-content: center;
+}
+
+.tg-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    width: 1653px;
+}
+
+.tg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 223px;
+
+}
+
+.tg-img {
+    width: 24px;
+    height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.text-main-footer {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.info-footer-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.support-footer-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.support-footer {
+    margin-right: 73px;
+}
+
+
+.setting-files {
+    width: 367px;
+    height: 902px;
+    display: flex;
+    flex-direction: column;
+}
+
+.files-main {
+    width: 1483px;
+    height: 898px;
+    display: flex;
+    margin-left: 100px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.setting-variant {
+    width: 367px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.delete-obj {
+    width: 367px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-photo {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    color: #FFF;
+}
+
+.photo-variant {
+    margin-right: 100px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Photo-setting-img {
+    margin-left: 15px;
+    width: 29px;
+    height: 26.583px;
+}
+
+.files-variant {
+    margin-right: 90px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.files-variant-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    color: #FFF;
+}
+
+.files-setting-img {
+    width: 47px;
+    height: 43.67px;
+}
+
+.text-photo {
+    font-family: Inter;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.btn-photo {
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.delete-variant {
+    margin-right: 97px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-delete-variant {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.delete-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.delete-text-img {
+    width: 28px;
+    height: 33.131px;
+    margin-left: 5px;
+}
+
+.delete-text-block {
+    color: rgba(183, 158, 158, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.delete-block-img {
+    margin-top: 12px;
+    width: 129px;
+    height: 129px;
+}
+
+.allDelete-text-IMG {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blockfile {
+    width: 150px;
+    height: 150px;
+    border-radius: 57px;
+    border: 5px solid #FFF;
+    background: #D9E9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.randomTyan-file {
+
+    width: 150px;
+    height: 200px;
+    margin-right: 80px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.all-files-tyan1 {
+    height: 50px;
+}
+
+.all-files-tyan2 {
+    padding-left: 40px;
+    height: 20px;
+    margin-top: 30px;
+    width: 101;
+}
+
+.all-files-tyan4 {
+    height: 50px;
+    padding-left: 40px;
+}
+
+.menu {
+    background: url('/img/menu.svg');
+    width: 389px;
+    height: 300px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn-menu-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: Light;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 30px;
+}
+
+.btn-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+
+}
+
+.btn-span-menu {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    padding-top: 30px;
+    margin-right: 210px;
+    transition: transform 0.3s;
+}
+
+.btn-span-menu:hover {
+    transform: scale(1.1);
+}
+
+.Profile-box {
+    width: 733px;
+    height: 939px;
+    background: url('/img/profile-box.svg');
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    position: fixed;
+    align-items: flex-start;
+    z-index: 999;
+    margin: 18px;
+    left: 550px;
+    border-radius: 70px;
+}
+
+.avatar-profile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 37px;
+}
+
+
+.btn-change-avatar {
+    width: 153px;
+    height: 26px;
+    border-radius: 14px;
+    border: 3px solid #FFD600;
+    background: #CEE0F0;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.nick {
+    color: #FFF;
+}
+
+.login-text-profile {
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.login-email-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.email-profile {
+    border-radius: 19px;
+    border: 1px solid #000;
+    background: #CEE0F0;
+    width: 475px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 81px;
+}
+
+.text-change-profile {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.btn-email-profile {
+    border-radius: 14px;
+    border: 3px solid #FFD600;
+    background: #CEE0F0;
+    width: 153px;
+    height: 26px;
+    cursor: pointer;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.login-profile {
+    border-radius: 19px;
+    border: 1px solid #000;
+    background: #CEE0F0;
+    width: 475px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.admins-tools {
+    border-radius: 35px;
+    border: 1px solid #000;
+    background: #A6CBEB;
+    width: 465px;
+    height: 451px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 61px;
+}
+
+.admins-tools-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 36px;
+}
+
+.input-profile-box {
+    border-radius: 19px;
+    border: 1px solid #FFD600;
+    background: #CEE0F0;
+    width: 418px;
+    height: 39px;
+    color: #090909;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+}
+
+.span-prelog-profile {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: Light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.adm-email-login-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    margin-left: 40px;
+}
+
+.check-profile {
+    margin-left: 24px;
+
+}
+
+.delete-profile {
+    margin-left: 24px;
+    margin-top: 26px;
+}
+
+.adm-profile {
+    margin-left: 24px;
+    margin-top: 26px;
+}
+
+.btn-user-profile-header {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.modal-wrapper {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    z-index: 888;
+}
+
+.visible {
+
+    animation: ani 3s forwards;
+}
+
+.leave-accont {
+    width: 153px;
+    height: 26px;
+    border-radius: 14px;
+    border: 3px solid #ff0000;
+    background: #CEE0F0;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.put-login-email-box {
+    border-radius: 41px;
+    background: #CEE0F0;
+    width: 586px;
+    height: 158px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    position: fixed;
+    align-items: center;
+    z-index: 999;
+    margin: 300px;
+    left: 350px;
+    justify-content: center;
+
+}
+
+input {
+    text-indent: 10px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    border-radius: 14px;
+    border: 5px solid #FFD600;
+    background: #CEE0F0;
+    text-decoration: none;
+    margin-top: 9px;
+    width: 331px;
+    height: 52px;
+}
+
+.button-box {
+    border-radius: 16px;
+    border: 1px solid #FFD600;
+    background: #99B7D2;
+    width: 166px;
+    height: 42px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 76px;
+}
+
+.reg-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.put-login-password-box {
+    border-radius: 41px;
+    background: #CEE0F0;
+    width: 586px;
+    height: 158px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    position: fixed;
+    align-items: center;
+    z-index: 999;
+    margin: 300px;
+    left: 350px;
+    justify-content: center;
+}
+
+#fileInput {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+label {
+    cursor: pointer;
+    /* Style as you please, it will become the visible UI component. */
+}
+
+.otherfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 144px;
+    height: 174px;
+    background: url('/img/TableGirl.svg');
+    margin-bottom: 35px;
+}
+
+.table-img-girl {
+    margin-bottom: 35px;
+}
+
+
+.nameAndFile {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-file-name {
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.photo-red {
+    width: 50px;
+    height: 30px;
+    margin-top: 50px;
+}
+
+.Photo-red-format {
+    width: 57px;
+    height: 31.722px;
+}
+.checkDrag{
+    display: flex;
+}
+
+
+#loading-spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
