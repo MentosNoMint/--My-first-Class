@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+
+<body>
+    <div class="modal-wrapper" id="modal-wrapper"></div>
+    <header>
+        <a href="#" id="ahover"><img src="./img/logo.svg" alt="Logo" class="logo"></a>
+        <div class="valueMenu">
+
+
+            <div class="Profile-Setting">
+
+                <a href="#" id="ahover">
+                    <img src="./img/setting.svg" alt="setting" class="setting">
+                </a>
+                <a href="#" id="ahover">
+                    <img src="./img/loading.svg" alt="Loading" class="load">
+                </a>
+                <a href="#" id="ahover">
+                    <img src="./img/profile.svg" alt="Profile" class="profile">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="content-main">
+            <div class="text-main">
+                <h1 class="main-nlo-text">
+                    Твое личное нло
+                </h1>
+                <p class="main-pred-text">
+                    *Один из лучших файлообменников ,
+                    ведь данные пользователей под надежной
+                    защитой вайфулей</p>
+            </div>
+
+            <div class="btn-load">
+                <button class="load-btn" id="load-btn">
+                    <img src="./img/btn-load.svg" alt="btn">
+                </button>
+            </div>
+        </div>
+        <div class="all-nlo-main">
+            <div class="nlo-logo">
+                <img src="./img/nlo.svg" alt="Nlo" class="nlo" id="nlo">
+            </div>
+
+            <div class="loac-all">
+                <img src="./img/loac1.svg" alt="Nlo" class="loac1" id="target">
+                <img src="./img/loac1.svg" alt="nlo" class="loac2" id="target2">
+                <img src="./img/loac1.svg" alt="nlo" class="loac3" id="target3">
+            </div>
+        </div>
+
+        <div class="reg-box" id="reg-box">
+
+            <div class="reg-form">
+
+                <span class="reg-text">
+                    Регистрация
+                </span>
+                <form id="my-form">
+                    <div class="email-form">
+                        <label>
+                            <p id="reg-text" class="reg-text-form">Почта:</p>
+                            <input id="email" name="email">
+                        </label>
+                    </div>
+                    <div class="login-form">
+                        <label>
+                            <p id="reg-text" class="reg-text-form">Логин:</p>
+                            <input id="login" name="login">
+                        </label>
+                    </div>
+                    <div class="password-form">
+                        <label>
+                            <p id="reg-text" class="reg-text-form">Пароль:</p>
+                            <input id="password" name="password">
+                        </label>
+                    </div>
+
+                    <div id="button-box" class="button-box">
+                        <button class="reg-button" type="submit" id="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+
+                <div class="logo-reg-box">
+
+                    <img src="./img/logo-reg-box.svg" alt="Logo">
+
+                </div>
+
+                <div class="error-register">
+
+                </div>
+                <button class="btn-login" id="btn-login">Уже Зарегистрированы?</button>
+            </div>
+        </div>
+
+        <div class="login-box" id="login-box">
+
+            <div class="reg-form" id="reg-form">
+
+
+                <form id="my-form-login">
+                    <div class="log-text-box">
+                        <span class="login-text">
+                            Вход
+                        </span>
+                    </div>
+                    <div class="login-form">
+                        <label>
+                            <p id="reg-text" class="reg-text-form">Логин:</p>
+                            <input id="login-log" name="login-log">
+                        </label>
+                    </div>
+                    <div class="password-form">
+                        <label>
+                            <p id="reg-text" class="reg-text-form">Пароль:</p>
+                            <input id="password-log" name="password-log">
+                        </label>
+                    </div>
+
+                    <div id="button-box" class="button-box">
+                        <button class="reg-button" type="submit" id="submit">Войти</button>
+                    </div>
+                </form>
+                
+
+                <div class="logo-reg-box">
+
+                    <img src="./img/logo-reg-box.svg" alt="Logo">
+
+                </div>
+            
+            <div class="error-login">
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+    </main>
+    <footer>
+
+        <div class="tg-footer">
+            <img src="/img/tg.svg" alt="" class="tg-img-footer">
+            <a href="#" class="tg-footer-text">
+                Бот в telegram
+            </a>
+        </div>
+        <div class="main-page-footer">
+            <a href="index.html" class="text-main-footer">
+                Главная страница
+            </a>
+        </div>
+        <div class="info-footer">
+            <a href="#" class="info-footer-text">
+                О нас
+            </a>
+        </div>
+        <div class="support-footer">
+            <p class="support-footer-text">
+                Тех.поддержка - FileWaifu@gmail.com
+            </p>
+        </div>
+
+        <div class="tyan-footer">
+            <img src="./img/anime-tyan.svg" alt="Tyan" class="footer-tyan-img">
+        </div>
+    </footer>
+    <script src="./CheckRegister.js"></script>
+    <script src="./nlo.js"></script>
+    <script src="Register.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+
+</html>
