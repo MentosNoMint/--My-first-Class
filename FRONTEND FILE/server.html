@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Загрузка файла на сервер</title>
+</head>
+<body>
+  <form id="uploadForm" method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file" id="fileInput">
+    <button type="submit" id="uploadButton">Загрузить</button>
+  </form>
+ 
+ 
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const uploadForm = document.getElementById('uploadForm');
+    const uploadButton = document.getElementById('uploadButton');
+
+    uploadForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        const formData = new FormData();
+        formData.append('file', file);
+
+        fetch('http://localhost:4000/upload', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.text())
+        .then(result => {
+          console.log(result);
+          alert('Файл успешно загружен на сервер');
+        })
+        .catch(error => {
+          console.error('Ошибка при загрузке файла:', error);
+          alert('Ошибка при загрузке файла');
+        });
+      } 
+    });
+  </script>
+</body>
+</html>

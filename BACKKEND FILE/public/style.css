@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.wrapper {
+    margin-top: 247px;
+    display: flex;
+    width: 586px;
+    height: 586px;
+    border-radius: 121px;
+    background: #CEE0F0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-file-span {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nameFile {
+    margin-top: 37px;
+}
+
+
+.main-content {
+    width: 488px;
+    height: 303.29px;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-table-girl {
+    width: 251px;
+    height: 303.29px;
+    background: url('img/download-link-girl-table.svg');
+}
+
+.info-Content {
+    width: 251px;
+    height: 303.29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+}
+
+.text-info-Content {
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.count-download-file {
+    margin-top: 30px;
+}
+
+.download-link-girl {
+    width: 49px;
+    height: 40.95px;
+    margin-top: 37px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page-text {
+    margin-top: 44px;
+}
+
+a {
+    text-decoration: none;
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

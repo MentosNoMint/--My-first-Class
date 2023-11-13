@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    background: #CEE0F0;
+    opacity: 0;
+    animation: ani 3s forwards;
+    overflow: hidden;
+    /* cursor: url('./img/cursor.png'), auto */
+
+}
+
+p {
+    pointer-events: none;
+    /* cursor: url('./img/cursor.png'), auto */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    pointer-events: none;
+    width: 285px;
+    height: 109px;
+    margin-top: 50px;
+    padding-left: 80px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* Увеличиваем элемент в 1.1 раза при наведении */
+}
+
+
+.valueMenu {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.load {
+    margin-right: 47px;
+    margin-top: 13px;
+}
+
+.Profile-Setting {
+    display: flex;
+    width: 205px;
+    height: 55.43px;
+    margin-right: 81px;
+}
+
+.setting {
+    margin-right: 35px;
+    margin-top: 13px;
+}
+
+.tg-div {
+    margin-top: 8px;
+    display: flex;
+    width: 158px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 66px;
+}
+
+.Telegram {
+    margin-right: 9px;
+}
+
+.tg {
+    color: #CBCBCB;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#ahover {
+    transition: transform 0.3s;
+}
+
+#ahover:hover {
+    transform: scale(1.1);
+    /* Увеличиваем элемент в 1.1 раза при наведении */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 570px;
+}
+
+.nlo {
+    width: 464px;
+    height: 224.025px;
+    display: flex;
+
+
+
+}
+
+.main-nlo-text {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 550px;
+    height: 77px;
+}
+
+.text-main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-pred-text {
+    color: #FFF;
+    margin-top: 31px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 530px;
+    height: 36px;
+    padding-left: 20px;
+}
+
+
+.content-main {
+    flex-direction: column;
+    display: flex;
+    padding-left: 170px;
+    margin-top: 148px;
+}
+
+.btn-load {
+    margin-top: 53px;
+    transition: transform 0.3s;
+}
+
+.btn-load:hover {
+    transform: scale(1.1);
+    /* Увеличиваем элемент в 1.1 раза при наведении */
+}
+
+.load-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.all-nlo-main {
+    margin-right: 228px;
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.loac-all {
+    display: flex;
+    align-items: center;
+    width: 565px;
+    height: 420px;
+    transform: rotate(-10deg);
+    align-items: flex-end;
+    padding-left: 70px;
+}
+
+.loac1 {
+    transform: scaleX(1) rotate(8deg);
+}
+
+.loac2 {
+    transform: scaleX(-1) rotate(-10deg);
+    margin-top: 50px;
+    pointer-events: none;
+}
+
+.loac3 {
+    transform: scaleX(-1) rotate(13deg);
+    pointer-events: none;
+}
+
+.nlo-logo {
+    height: 170px;
+    pointer-events: none;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1700px;
+}
+
+.Tyan-img {
+
+    transform: rotate(4.113deg);
+
+}
+
+
+#nlo {
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+.reg-box {
+    display: none;
+    position: fixed;
+    width: 625px;
+    height: 660px;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: url('./img/tyan-reg.svg');
+    margin: 80px;
+    left: 600px;
+    z-index: 999;
+
+
+}
+
+.visible {
+
+    animation: ani 3s forwards;
+}
+
+.reg-form {
+    margin: 44px;
+    padding-left: 30px;
+
+}
+
+
+.reg-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 55px;
+
+}
+
+.reg-text-form {
+    margin-top: 5px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.reg-button {
+    border-radius: 16px;
+    border: 1px solid #FFD600;
+    background: #99B7D2;
+    width: 166px;
+    height: 42px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+}
+
+label {
+    background: url('./img/obvodka-label.svg');
+    width: 284px;
+    height: 55px;
+    text-decoration: none;
+}
+
+input {
+    text-indent: 10px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+    background: url('./img/obvodka-label.svg');
+    width: 284px;
+    height: 55px;
+    text-decoration: none;
+    margin-top: 9px;
+}
+
+.login-form {
+    padding-left: 50px;
+}
+
+
+.button-box {
+
+    padding-left: 70px;
+    transition: transform 0.3s;
+}
+
+.button-box:hover {
+    transform: scale(1.1);
+    /* Увеличиваем элемент в 1.1 раза при наведении */
+}
+
+.logo-reg-box {
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+
+.modal-wrapper {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+}
+
+
+.error-txt {
+    color: red;
+}
+
+.error-register {
+    margin-top: 10px;
+    padding-left: 220px;
+    position: absolute;
+}
+
+.tg-footer-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-left: 3px;
+}
+
+.tg-img-footer {
+    width: 24px;
+    height: 24px;
+}
+
+.tg-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 122px;
+    margin-top: 100px;
+
+}
+
+.text-main-footer {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.main-page-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 181px;
+    height: 27px;
+    margin-top: 100px;
+}
+
+.info-footer-text {
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 181px;
+    height: 27px;
+    margin-top: 100px;
+}
+
+.support-footer-text {
+
+    color: #B4A9A9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+
+.support-footer {
+    margin-top: 100px;
+}
+
+.footer-tyan-img {
+    width: 398px;
+    height: 242.807px;
+    margin-right: 40px;
+}
+
+.btn-login {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+
+}
+
+.login-box {
+    display: none;
+    position: fixed;
+    width: 625px;
+    height: 660px;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: url('./img/tyan-reg.svg');
+    margin: 80px;
+    left: 600px;
+    z-index: 999;
+}
+
+.login-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.log-text-box {
+    margin-bottom: 20px;
+    margin-left: 130px;
+}
