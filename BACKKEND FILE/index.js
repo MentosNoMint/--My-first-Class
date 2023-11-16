@@ -29,26 +29,26 @@ app.listen(`${port}`, () => {
 
 app.use(express.static('public'));
 app.get(`/fileId/:id`, (req, res) => {
-  
-  async function Allinfo(){
-  
 
-const passFile = req.params.id
+  async function Allinfo() {
 
 
-  let CheckIdFromMd5 = await fetch(`http://localhost:4000/CheckId/${passFile}`, {
-    method: 'GET',
-})
-const ContentCheckIdFromMd5 = await CheckIdFromMd5.json();
-  
-
-ContentCheckIdFromMd5.map(async a =>{
+    const passFile = req.params.id
 
 
- 
+    let CheckIdFromMd5 = await fetch(`http://localhost:4000/CheckId/${passFile}`, {
+      method: 'GET',
+    })
+    const ContentCheckIdFromMd5 = await CheckIdFromMd5.json();
 
 
-  const html = `<!DOCTYPE html>
+    ContentCheckIdFromMd5.map(async a => {
+
+
+
+
+
+      const html = `<!DOCTYPE html>
   <html lang="en">
   
   <head>
@@ -103,28 +103,28 @@ ContentCheckIdFromMd5.map(async a =>{
 
   <script src="/OpenFiles.js"></script>
   </html>`;
-  
 
-  res.send(html);
-  
 
-})
-}
+      res.send(html);
 
-Allinfo()
+
+    })
+  }
+
+  Allinfo()
 });
 
 
 
 app.post("/users/register", jsonParser, (req, res) => {
-  const user = { email, login, password } = req.body;
+  const user = { email, login, password, avatar_path } = req.body;
   const createNewUser = () => {
     const token = jwt.sign({
       email: user.email
     }, secret, {
       expiresIn: 86400
     })
-    db.run(`INSERT INTO users (login, password , email  , token) VALUES("${login}", "${md5(password)}" , "${email}", "${token}" )`)
+    db.run(`INSERT INTO users (login, password , email  , token , avatar_path) VALUES("${login}", "${md5(password)}" , "${email}", "${token}", "${avatar_path}" )`)
 
 
 
@@ -139,9 +139,9 @@ app.post("/users/register", jsonParser, (req, res) => {
   }
 
 
-  
-  
-  
+
+
+
   db.get(`SELECT * FROM users WHERE email = "${email}"`, (err, data) => {
     if (err) {
       console.log('error: '.err)
@@ -240,10 +240,53 @@ app.get('/id/:token', (req, res) => {
 });
 
 
+app.put('/rename/:id/', (req, res) => {
+  const { id } = req.params;
+  const { file_name } = req.body;
+
+  db.run(`UPDATE Fukes SET file_name = ? WHERE id = ?`, [file_name, id], err => {
+    if (err) {
+      console.error(err);
+      res.sendStatus(500);
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
+
+
+app.put('/avatar/:id', (req, res) => {
+  const { id } = req.params;
+  const { avatar_path } = req.body;
+
+  db.run(`UPDATE Users SET avatar_path = ? WHERE id = ?`, [avatar_path, id], err => {
+    if (err) {
+      console.error(err);
+      res.sendStatus(500);
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
+
 app.get('/id/allinfo/:id', (req, res) => {
   const id = req.params.id;
 
   db.all(`SELECT * FROM users WHERE id = ?`, id, (err, row) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send();
+      return;
+    }
+    res.send(row);
+  });
+});
+
+
+app.get('/Checkid/token/:token', (req, res) => {
+  const token = req.params.token;
+
+  db.all(`SELECT * FROM Users WHERE token = ?`, token, (err, row) => {
     if (err) {
       console.log(err);
       res.status(500).send();
@@ -339,6 +382,19 @@ app.put('/files/:id/count_Download', (req, res) => {
   });
 });
 
+
+app.get('/name/files/:nameFile', (req, res) => {
+  const nameFile = req.params.nameFile
+
+  db.all(`SELECT * from Fukes WHERE file_name LIKE '%' || ? || '%'`, nameFile, (err, row) => {
+
+    if (err) {
+      res.status(500).send()
+      return;
+    }
+    res.send(row);
+  })
+})
 
 app.get('/files/id/allinfo/:user_id', (req, res) => {
   const user_id = req.params.user_id;
@@ -461,5 +517,48 @@ app.post('/upload', (req, res) => {
 
 
 
+
+
+app.post('/upload/img', (req, res) => {
+
+  const client = new ftp();
+
+
+  const ftpOptions = {
+    host: 'j90903gn.beget.tech',
+    user: 'j90903gn',
+    password: '5ZJQXXWorNY4'
+  };
+
+
+  client.connect(ftpOptions);
+
+
+  client.on('ready', () => {
+
+    fs.readFile(req.files.fileImg.path, (err, data) => {
+      if (!err) {
+        client.put(data, '/j90903gn.beget.tech/public_html/' + req.files.fileImg.name, (err) => {
+          if (!err) {
+            console.log('Файл успешно загружен на FTP сервер');
+            res.send('Файл успешно загружен на FTP сервер');
+          } else {
+            console.error('Ошибка при загрузке файла на FTP сервер:', err);
+            res.status(500).send('Ошибка при загрузке файла на FTP сервер');
+          }
+        });
+      } else {
+        console.error('Ошибка при чтении файла:', err);
+        res.status(500).send('Ошибка при чтении файла');
+      }
+    });
+  });
+
+
+  client.on('error', (err) => {
+    console.error('Ошибка при подключении к FTP серверу:', err);
+    res.status(500).send('Ошибка при подключении к FTP серверу');
+  });
+});
 
 
