@@ -8,7 +8,7 @@ form.addEventListener('submit', async (event) => {
     const email = formData.get('email')
     const login = formData.get('login')
     const password = formData.get('password')
-
+    const avatar_path = "http://j90903gn.beget.tech/Normal_logo.png"
     let checkEmailLogin = false
 
     let responceEmailLogin = await fetch(`http://localhost:4000/check/email/login`, {
@@ -57,7 +57,7 @@ form.addEventListener('submit', async (event) => {
         fetch('http://localhost:4000/users/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, login, password }),
+            body: JSON.stringify({ email, login, password , avatar_path}),
         });
 
 

@@ -20,7 +20,8 @@
             <div class="wrapperchange">
                 <div class="putEmail">
                     <label>
-                        <input id="email-change" name="email-change" placeholder="Введите новую почту">
+                        <input class="input-profile-box" id="email-change" name="email-change"
+                            placeholder="Введите новую почту">
                     </label>
                 </div>
                 <div class="countChange">
@@ -36,7 +37,8 @@
             <div class="wrapperchange">
                 <div class="putEmail">
                     <label>
-                        <input id="login-change" name="login-change" placeholder="Введите новый логин">
+                        <input class="input-profile-box" id="login-change" name="login-change"
+                            placeholder="Введите новый логин">
                     </label>
                 </div>
                 <div class="countChange">
@@ -49,10 +51,15 @@
     </div>
     <div class="Profile-box" id="Profile-box">
         <div class="avatar-profile">
-            <img src="/img/img-profile-box.svg" alt="Avatar">
-            <button class="btn-change-avatar">
-                Добавить аватар
-            </button>
+            <div class="avatar-user-change">
+
+            </div>
+            <form class="form-add-btn">
+                <input type="file" name="fileImg" id="fileInputImg" class="input-load" />
+                <button type="submit" id="uploadButtonImg">
+                    <label for="fileInputImg" class="btn-change-avatar"> Загрузить файлы</label>
+                </button>
+            </form>
             <form class="My-form">
                 <button class="leave-accont" id="Leave-btn">Выйти</button>
             </form>
@@ -115,7 +122,7 @@
             <div class="btn-load">
                 <form id="uploadForm" method="POST" action="/upload" enctype="multipart/form-data">
 
-                    <input type="file" name="file" id="fileInput" />
+                    <input type="file" name="file" id="fileInput" class="input-load" />
                     <button type="submit" id="uploadButton" class="btn-loading">
                         <label for="fileInput" class="btn-load-text"> Загрузить файлы</label>
                     </button>
@@ -123,7 +130,10 @@
             </div>
             <div class="bar-search">
                 <img src="/img/lupa.svg" alt="" class="lupa">
-                <span class="btn-search-text">Введите название файла</span>
+                <form class="form-search">
+                    <input type="text" placeholder="Введите название файла" class="btn-search-text-input" name="input-search" id="input-search">
+                    <!-- <span class="btn-search-text">Введите название файла</span> -->
+                </form>
             </div>
 
         </div>
@@ -142,7 +152,7 @@
                 <img src="/img/user-girls.svg" alt="Girl" style="position: absolute; z-index: 3;">
 
                 <div class="user-logo">
-                    <img src="/img/user-logoFilepages.svg" alt="User">
+                    <img src="/img/user-logoFilepages.svg" alt="User" class="user-logo-img">
                 </div>
 
                 <img src="/img/hand.svg" alt="hand" class="hand">
@@ -150,7 +160,7 @@
         </button>
     </header>
 
-    <main >
+    <main>
 
 
 
@@ -160,11 +170,11 @@
         <div class="wrapper" id="wrapper">
 
             <div class="files-main" id="main">
-                
+
                 <div id="loading-spinner"></div>
-              
-        
-<!-- 
+
+
+                <!-- 
                  <div class="randomTyan-file">
                      <img src="/img/tyan-element-2.svg" alt="Tyan" class="all-files-tyan2">
                     <div class="blockfile" draggable="true"></div>
@@ -194,18 +204,25 @@
                     </div>
                     <div class="files-variant">
                         <button class="files-variant-btn">
-                            <span class="btn-photo">Файлы</span>
+                            <span class="btn-photo-file">Файлы</span>
 
                         </button>
                         <img src="/img/file-btn.svg" alt="files" class="files-setting-img">
                     </div>
                     <div class="delete-variant">
-                        <button class="btn-delete-variant">
+                        <button class="btn-delete-variant" id="btn-delete-variant">
                             <span class="delete-text">
                                 Корзина
                             </span>
                         </button>
                         <img src="/img/delete-btn.svg" alt="Delete-btn" class="delete-text-img">
+                    </div>
+                    <div class="return-variant">
+                        <button class="btn-return-variant">
+                            <span class="return-text">
+                                Вернуться
+                            </span>
+                        </button>
                     </div>
                 </div>
 
@@ -257,9 +274,16 @@
                 <span class="btn-menu-text">Поделиться</span>
             </button>
             <button class="btn-span-menu">
-                <span class="btn-menu-text">Переименовать</span>
+                <span class="btn-menu-text" id="rename-btn-count">Переименовать</span>
             </button>
 
+        </div>
+    </div>
+    <div id="menu-heal" class="menu-heal" style="display:none">
+        <div class="btn-menu">
+            <button class="btn-span-menu" id="heal-btn-count">
+                <span class="btn-menu-text">Восстановить</span>
+            </button>
         </div>
     </div>
 </body>
@@ -271,6 +295,8 @@
 <script src="UserFiles.js"></script>
 <script src="./move.js"></script>
 <script src="server.js"></script>
+<script src="./ChangeAvatar.js"></script>
+<script src="search.js"></script>
 
 
 </html>

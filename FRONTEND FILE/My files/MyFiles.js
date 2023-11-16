@@ -10,6 +10,10 @@ const loginList = document.querySelector('.login-profile-view');
 
 const emailList = document.querySelector('.email-profile-view');
 
+const avatarList = document.querySelector('.avatar-user-change');
+
+const userLogo = document.querySelector('.user-logo');
+
 const list = document.querySelector('.nick')
 
 async function CheckAdm() {
@@ -28,6 +32,8 @@ async function CheckAdm() {
             list.innerHTML = `<span class="login-text-profile">${a.login}</span>`
             emailList.innerHTML = `<span class="text-change-profile">Почта:${a.email}</span>`
             loginList.innerHTML = `<span class="text-change-profile">Логин:${a.login}</span>`
+            avatarList.innerHTML = `<img src="${a.avatar_path}" alt="Avatar" class="avatar-user-png">`
+            userLogo.innerHTML = `<img src="${a.avatar_path}" alt="User" class="user-logo-img">`
             if (a.Admin === 1) {
                 admins.style.display = 'flex';
                 textAdm.style.color = "#FF0000";
@@ -66,3 +72,4 @@ form.addEventListener('submit', async (event) => {
 
 
 })
+

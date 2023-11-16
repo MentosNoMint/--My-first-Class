@@ -14,6 +14,7 @@ loginform.addEventListener('submit', async (event) => {
         method: 'GET',
     })
     const contentEmailLogin = await responceEmailLogin.json();
+    
     contentEmailLogin.map(a => {
         console.log(contentEmailLogin)
         console.log(login, password)

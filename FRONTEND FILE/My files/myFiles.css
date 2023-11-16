@@ -127,6 +127,20 @@ header {
     line-height: normal;
     margin-left: 22px;
 }
+.btn-search-text-input {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 22px;
+    background: none;
+    color: inherit;
+    border: none;
+    outline: inherit;
+    padding: 0;
+}
 
 .tyan-img {
     margin-top: 20px;
@@ -284,6 +298,8 @@ a {
     color: #FFF;
 }
 
+
+
 .photo-variant {
     margin-right: 100px;
     margin-top: 120px;
@@ -339,12 +355,34 @@ a {
     line-height: normal;
 }
 
+.btn-photo-file {
+
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
 .delete-variant {
     margin-right: 97px;
     margin-top: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.return-variant {
+
+    margin-right: 120px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .btn-delete-variant {
@@ -360,6 +398,15 @@ a {
     color: #FFF;
     font-family: Inter;
     font-size: 32px;
+    font-style: light;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.return-text {
+    color: #928e8e;
+    font-family: Inter;
+    font-size: 20px;
     font-style: light;
     font-weight: 300;
     line-height: normal;
@@ -438,7 +485,18 @@ a {
     border-radius: 13px;
     display: flex;
     flex-direction: column;
+    z-index: 999;
 
+}
+
+.menu-heal {
+    background: url('/img/menu.svg');
+    width: 389px;
+    height: 300px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .btn-menu-text {
@@ -492,13 +550,16 @@ a {
 .avatar-profile {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
     margin-left: 37px;
 }
 
 
 .btn-change-avatar {
-    width: 153px;
+
+    width: 170px;
     height: 26px;
     border-radius: 14px;
     border: 3px solid #FFD600;
@@ -511,6 +572,7 @@ a {
     line-height: normal;
     cursor: pointer;
     margin-top: 15px;
+
 }
 
 .nick {
@@ -710,7 +772,7 @@ a {
 
 }
 
-input {
+.input-load {
     text-indent: 10px;
     background: none;
     color: inherit;
@@ -778,8 +840,15 @@ input {
     z-index: -1;
 }
 
+#fileInputImg {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 label {
     cursor: pointer;
+
     /* Style as you please, it will become the visible UI component. */
 }
 
@@ -816,6 +885,7 @@ label {
     line-height: normal;
 }
 
+
 .photo-red {
     width: 50px;
     height: 30px;
@@ -826,7 +896,8 @@ label {
     width: 57px;
     height: 31.722px;
 }
-.checkDrag{
+
+.checkDrag {
     display: flex;
 }
 
@@ -843,9 +914,80 @@ label {
     border-top: 4px solid #3498db;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rename-file {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+}
+
+#rename-file {
+
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
+.rename-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-file-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-rename {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+
+}
+
+.avatar-user-png {
+    width: 133px;
+    height: 133px;
+    border-radius: 61.44px;
+    border: 2px solid #FFF;
+}
+
+.user-logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+}
+
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
+.btn-return-variant {
+    cursor: pointer;
+}
