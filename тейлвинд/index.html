@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '640px',
+                    md: '768px',
+                    lg: '1024px',
+                    xl: '1280px',
+                    xll: '1536px',
+                    xlll: '1920px'
+                },
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                        grayText: "#7f7f7f",
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+                .overF {
+                    overflow: hidden;
+                }
+            }
+            @layer base {
+                * {
+                    @apply m-0 p-0 box-border font-['Nunito'] ;
+                }
+
+                .wrapper {
+                    @apply min-h-full overF flex flex-col;
+                }
+                body , html {
+                    height: 100%;
+                }
+               
+            }
+            @layer components {
+                #Select-message{
+                    @apply bg-[#FFE6E1] rounded-[8px]
+                }
+                #element-message-border{
+                    border-radius: 0px 24px 24px 24px;
+                    background: #F0F0F0;
+                }
+                .text-message{
+                    @apply text-black font-normal text-[16px]
+                }
+                #Myelement-message-border{
+                    border-radius: 24px 24px 0px 24px;
+                    background: #D9F1FF;
+                }
+                #chat-box{
+                    border-radius: 21px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.07);
+                }
+            }
+        </style>
+    <title>Messages</title>
+</head>
+
+<body>
+    <div class="wrapper h-full">
+        <div class="w-full h-full flex flex-col " id="container">
+            <header class="flex justify-between">
+                <div class="flex mt-6 ml-8 cursor-pointer">
+                    <img src="/img/Logo.svg" alt="logo" />
+                </div>
+
+                <div class="flex items-start mr-[32px]">
+                    <div
+                        class="flex rounded-[17.5px] border-[#FFB7A9] border-2 flex w-[205px] h-[36px] justify-center items-center mt-[26px]  hidden sm:flex">
+                        <div class="flex w-[16px] cursor-pointer">
+                            <img src="/img/plus.svg" alt="event" />
+                        </div>
+
+                        <div class="flex">
+                            <span class="text-black text-sm mx-[20px]">
+                                Новое событие</span>
+                        </div>
+
+                        <div class="flex w-[16px] cursor-pointer">
+                            <img src="/img/arrow-event.svg" alt="event" />
+                        </div>
+                    </div>
+
+                    <div class="ml-[32px] mt-[36px] cursor-pointer">
+                        <img src="/img/message-icon.svg" alt="Message" />
+                    </div>
+
+                    <div class="ml-[24px] mt-[32px] cursor-pointer">
+                        <img src="/img/bells.svg" alt="bells" />
+                    </div>
+                    <div class="flex items-center justify-center flex ml-[26px] mt-[24px]">
+                        <div class="">
+                            <img src="/img/avatar.svg" alt="Avatar" />
+                        </div>
+                        <div class="cursor-pointer">
+                            <img src="/img/arrow-avatar.svg" alt="Avatar" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="w-full h-[1px] bg-[#B9BABD] mt-[15px] opacity-30"></div>
+            <main class="flex h-full flex-col sm:flex-row overflow-y-auto">
+                <div
+                    class="flex flex-col bg-[#fafafe] max-w-[640px] w-full it md:max-w-[432px] sm:max-w-[320px]  overflow-y-auto ">
+                    <div class="flex flex-col mt-[24px] ml-[32px]">
+                        <span class="text-grayText font-extrabold">Мессенджер</span>
+                        <div
+                            class="flex items-center w-[330px] h-[54px] bg-white justify-start rounded-[10px] mt-[14px] md:w-[364px] sm:w-[280px]">
+                            <div class="flex ml-[16px]">
+                                <img src="/img/lupa.svg" alt="Lupa" />
+                            </div>
+                            <div class="flex ml-[16px]">
+                                <input type="text" name="search-text" placeholder="Поиск"
+                                    class="outline-0 text-grayText" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex ml-[27px] mt-[26px]">
+                        <div class="flex w-[73px] h-[31px] bg-[#585858] rounded-2xl justify-center items-center">
+                            <span class="text-white text-sm cursor-pointer">Чаты</span>
+                        </div>
+
+                        <div
+                            class="flex  mx-[7px] w-[73px] h-[31px] bg-white rounded-2xl border-[#585858] border-2 justify-center items-center cursor-pointer">
+                            <span class="text-[#585858] text-sm">Места</span>
+                        </div>
+
+                        <div
+                            class="flex w-[73px] h-[31px] bg-white rounded-2xl border-[#585858] border-2 justify-center items-center cursor-pointer">
+                            <span class="text-[#585858] text-sm">Встречи</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col w-full">
+                        <div class="flex items-center ml-[30px] mt-[24px]">
+                            <img src="/img/zakrep.svg" alt="Zakrep" />
+                            <span class="text-[#949494] text-xs font-semibold">Закрепленные</span>
+                        </div>
+
+                        <div class="flex flex-col ml-[32px] mr-[20px] ">
+
+                            <div class="flex w-full h-[64px] items-center justify-between  mt-[10px] cursor-pointer  "
+                                id="Select-message">
+                                <div class="flex">
+                                    <div class="flex ml-[16px]">
+                                        <img src="/img/avatar-message.svg" alt="Avatar" />
+                                    </div>
+
+                                    <div class="flex flex-col ml-[11px]">
+                                        <div>
+                                            <span class="font-semibold text-[18px]">Алина Васильева</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-[#7F7F7F] text-[14px] font-normal">Вы: Слышали ли
+                                                вы...</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col items-end mr-[16px]">
+                                    <div class="flex">
+                                        <span class="text-[13px] font-normal text-[#b2b2b2]">14:00</span>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="w-[18px] h-[18px] bg-[#FC5130] flex justify-center items-center rounded-[64px] mt-[5px]">
+                                            <span class="text-white text-[10px] flex items-center font-normal">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-[200px] h-[1px] bg-[#B9BABD] mt-[15px] ml-[130px] opacity-30"></div>
+
+                    <div class="flex flex-col w-full">
+
+                        <div class="flex flex-col ml-[32px] mr-[20px] ">
+
+                            <div class="flex w-full h-[64px] items-center justify-between  mt-[10px] cursor-pointer  ">
+                                <div class="flex">
+                                    <div class="flex ml-[16px]">
+                                        <img src="/img/avatar-message.svg" alt="Avatar" />
+                                    </div>
+
+                                    <div class="flex flex-col ml-[11px]">
+                                        <div>
+                                            <span class="font-semibold text-[18px]">Алина Васильева</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-[#7F7F7F] text-[14px] font-normal">Вы: Слышали ли
+                                                вы...</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col items-end mr-[16px]">
+                                    <div class="flex">
+                                        <span class="text-[13px] font-normal text-[#b2b2b2]">14:00</span>
+                                    </div>
+                                    <div>
+                                        <div
+                                            class="w-[18px] h-[18px] bg-[#FC5130] flex justify-center items-center rounded-[64px] mt-[5px]">
+                                            <span class="text-white text-[10px] flex items-center font-normal">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex flex-col ml-[32px] mr-[20px] ">
+
+                            <div class="flex w-full h-[64px] items-center justify-between  mt-[10px] cursor-pointer  ">
+                                <div class="flex">
+                                    <div class="flex ml-[16px]">
+                                        <img src="/img/avatar-message.svg" alt="Avatar" />
+                                    </div>
+
+                                    <div class="flex flex-col ml-[11px]">
+                                        <div>
+                                            <span class="font-semibold text-[18px]">Алина Васильева</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-[#7F7F7F] text-[14px] font-normal">Вы: Слышали ли
+                                                вы...</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col items-end mr-[16px]">
+                                    <div class="flex">
+                                        <span class="text-[13px] font-normal text-[#b2b2b2]">14:00</span>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <span class="text-white text-[10px] flex items-center font-normal"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex flex-col ml-[32px] mr-[20px] ">
+
+                            <div class="flex w-full h-[64px] items-center justify-between  mt-[10px] cursor-pointer  ">
+                                <div class="flex">
+                                    <div class="flex ml-[16px]">
+                                        <img src="/img/avatar-message.svg" alt="Avatar" />
+                                    </div>
+
+                                    <div class="flex flex-col ml-[11px]">
+                                        <div>
+                                            <span class="font-semibold text-[18px]">Настья Золья</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-[#7F7F7F] text-[14px] font-normal">Вы: Слышали ли
+                                                вы...</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col items-end mr-[16px]">
+                                    <div class="flex">
+                                        <span class="text-[13px] font-normal text-[#b2b2b2]">14:00</span>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <span class="text-white text-[10px] flex items-center font-normal"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full h-[1px] bg-[#585858] opacity-50 flex sm:hidden"></div>
+                <div class="flex w-full overflow-y-auto ">
+                    <div class="flex w-full flex-col">
+
+                        <div class="flex justify-between items-start w-full">
+                            <div
+                                class="flex justify-center items-center flex ml-[40px] mt-[28px] scale-90 w-[120px]  md:scale-100 md:w-[130px]">
+                                <div class="">
+                                    <img src="/img/avatar-meesage-chat.svg" alt="Avatar">
+                                </div>
+                                <div class="flex ml-[24px]">
+                                    <span class="text-black text-[11px] font-bold md:text-[16px]">Алина Иванова</span>
+                                </div>
+                            </div>
+
+                            <div class="flex mt-[34px] mr-[32px]">
+                                <div class="flex cursor-pointer">
+                                    <img src="/img/phone.svg" alt="phone">
+                                </div>
+                                <div class="flex flex ml-[24px] cursor-pointer">
+                                    <img src="/img/video-icon.svg" alt="Video">
+                                </div>
+                                <div class="flex ml-[24px] cursor-pointer">
+                                    <img src="/img/photo.svg" alt="Photo">
+                                </div>
+                                <div class="flex ml-[24px] cursor-pointer">
+                                    <img src="/img/other.svg" alt="Other">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="w-full bg-[#b9babd] opacity-30 h-[1px] mt-[22px]"></div>
+
+                        <div class="flex justify-center mt-[15px] ">
+                            <span class="text-[#949494] text-[16px] font-bold">Сегодня, 21 ноября</span>
+                        </div>
+
+                        <div class="flex flex-col">
+
+                            <div class="flex mt-[10px]" id="friend-message">
+                                <div class="flex mx-[16px]">
+                                    <img src="/img/avatar-meesage-chat.svg" alt="Avatar">
+                                </div>
+                                <div class="flex " id="element-message-border">
+                                    <div class="flex items-center pl-[20px]">
+                                        <span class="text-message">Привет , как дела?
+                                        </span>
+                                    </div>
+                                    <div class="flex items-end pr-[16px]">
+                                        <span class="text-[#808080] text-[12px] font-normal">14:00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-end">
+                                <div class="flex mt-[10px]" id="my-message">
+
+                                    <div class="flex" id="Myelement-message-border">
+
+                                        <div class="flex items-center pl-[20px]">
+                                            <span class="text-message">Привет , у тебя как?</span>
+                                        </div>
+                                        <div class="flex items-end pr-[16px]">
+                                            <span class="text-[#808080] text-[12px] font-normal">14:05</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mx-[16px]">
+                                        <img src="/img/avatar-chat-2.svg" alt="Avatar">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex mt-[10px]" id="friend-message">
+                                <div class="flex mx-[16px]">
+                                    <img src="/img/avatar-meesage-chat.svg" alt="Avatar">
+                                </div>
+                                <div class="flex " id="element-message-border">
+                                    <div class="flex items-center pl-[20px]">
+                                        <span class="text-message">У меня хорошо!
+                                        </span>
+                                    </div>
+                                    <div class="flex items-end pr-[16px]">
+                                        <span class="text-[#808080] text-[12px] font-normal">14:20</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="flex justify-end">
+                                <div class="flex mt-[10px]" id="my-message">
+
+                                    <div class="flex" id="Myelement-message-border">
+
+                                        <div class="flex items-center pl-[20px]">
+                                            <span class="text-message">Ладненько пока!</span>
+                                        </div>
+                                        <div class="flex items-end pr-[16px]">
+                                            <span class="text-[#808080] text-[12px] font-normal">15:30</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mx-[16px]">
+                                        <img src="/img/avatar-chat-2.svg" alt="Avatar">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex h-full items-end">
+
+                            <div class="flex w-full mb-[31px] max-h-[80px] ">
+                                <div class="flex justify-center items-center cursor-pointer mx-[32px]">
+                                    <img src="/img/skrepka.svg" alt="skrepka">
+                                </div>
+
+                                <div class="flex w-full justify-between mr-[15px]  mt-[15px]" id="chat-box">
+                                    <div class="flex pl-[32px]  w-[50px]">
+                                        <input type="text" placeholder="Сообщение..."
+                                            class="outline-0 text-[#949494] text-[10px] font-semibold  md:text-[16px]">
+                                    </div>
+
+                                    <div class="flex justify-center items-center scale-90 md:scale-100 ">
+                                        <div class="cursor-pointer">
+                                            <img src="img/location.svg" alt="location">
+                                        </div>
+                                        <div class="flex mx-[24px] cursor-pointer">
+                                            <img src="img/mic.svg" alt="mic">
+                                        </div>
+                                        <div class="flex mr-[32px] cursor-pointer py-[29px]">
+                                            <img src="/img/sent-icon.svg" alt="send">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="h-full bg-[#b9babd] w-[1px] opacity-30"></div>
+
+                    <div class="flex flex-col max-w-[340px] w-full  items-center  hidden xl:flex">
+                        <div class="flex">
+                            <div class="flex flex-col items-center justify-center mt-[40px]">
+                                <div>
+                                    <img src="/img/logo-element-info.svg" alt="Avatar">
+                                </div>
+                                <div class="flex items-center justify-center mt-[14px]">
+                                    <span class="text-black text-[16px] font-extrabold">Алина Иванова</span>
+                                </div>
+                                <div class="flex items-center justify-center">
+                                    <span class="text-[#949494] text-[16px] font-bold">@username</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="w-full h-[1px] opacity-30 bg-[#b9babd] mt-[45px]"></div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
